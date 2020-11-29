@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gonon"
+        android:state_pressed="true"/> //하얀 건반 눌렀을 때, 회색으로
+    <item android:drawable="@drawable/gonoff"/> //안누르면 하얀색으로
+</selector>

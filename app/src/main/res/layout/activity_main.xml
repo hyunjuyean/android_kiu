@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //하얀건반
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="13dp">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="319dp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="319dp" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="53dp"
+                android:layout_height="174dp"
+                android:background="@drawable/white_button"
+                android:onClick="sound"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+        </LinearLayout>
+
+        //검정건반
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_btn1"
+                android:layout_width="49dp"
+                android:layout_height="95dp"
+                android:background="@drawable/black_button"
+                android:onClick="sound"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="40dp"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/b_btn2"
+                android:layout_width="49dp"
+                android:layout_height="95dp"
+                android:background="@drawable/black_button"
+                android:onClick="sound"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="7dp"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/b_btn3"
+                android:layout_width="49dp"
+                android:layout_height="95dp"
+                android:background="@drawable/black_button"
+                android:onClick="sound"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="55dp"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/b_btn4"
+                android:layout_width="49dp"
+                android:layout_height="95dp"
+                android:background="@drawable/black_button"
+                android:onClick="sound"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="6dp"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <Button
+                android:id="@+id/b_btn5"
+                android:layout_width="49dp"
+                android:layout_height="95dp"
+                android:background="@drawable/black_button"
+                android:onClick="sound"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="4dp"
+                tools:layout_editor_absoluteX="222dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+        </LinearLayout>
+
+        //추가 버튼
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rec"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="record"
+                android:onClick="record"
+                android:background="#212121"
+                android:textColor="#ffffff"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="447dp"/>
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="447dp"
+                android:layout_marginTop="10dp"
+                android:background="#212121"
+                android:onClick="stop"
+                android:text="stop"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="play"
+                android:onClick="play"
+                android:background="#212121"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="447dp"/>
+
+            <Button
+                android:id="@+id/draw"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="draw"
+                android:onClick="change"
+                android:background="#212121"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="447dp"/>
+
+            <Button
+                android:id="@+id/fin"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="447dp"
+                android:layout_marginTop="10dp"
+                android:background="#212121"
+                android:onClick="fin"
+                android:text="fin"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
